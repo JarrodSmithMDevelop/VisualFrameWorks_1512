@@ -1,5 +1,5 @@
 
-11/26/2015, 3:22:46 AM
+11/29/2015, 10:10:42 PM
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/JarrodSmith/.appcelerator/install/5.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 5.1.1.GA --project-dir /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1 --target simulator --ios-version 9.1 --device-family iphone --sim-type iphone --sim-version 9.1 --device-id 29D9F465-1827-4B4D-A17C-307B0C921646 --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49763 --plugin-paths /Users/JarrodSmith/.appcelerator/install/5.1.0/package/node_modules --config-file /var/folders/zk/r7vy3c8503792qfczh43dhfw0000gn/T/build-1448529763088.json --no-banner
+  /usr/local/bin/node /Users/JarrodSmith/.appcelerator/install/5.1.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 5.1.1.GA --project-dir /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1 --target simulator --ios-version 9.1 --device-family iphone --deploy-type development --sim-type iphone --sim-version 9.1 --device-id 29D9F465-1827-4B4D-A17C-307B0C921646 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 59977 --plugin-paths /Users/JarrodSmith/.appcelerator/install/5.1.0/package/node_modules --config-file /var/folders/zk/r7vy3c8503792qfczh43dhfw0000gn/T/build-1448856639268.json --no-banner
 
 [TRACE]  [ioslib] Validating iOS Simulator UDID 29D9F465-1827-4B4D-A17C-307B0C921646
 [TRACE]  [ioslib] Found iOS Simulator UDID 29D9F465-1827-4B4D-A17C-307B0C921646
@@ -62,7 +62,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/zk/r7vy3c8503792qfczh43dhfw0000gn/T/build-eaa9d8477e3e298ebfc56cf37d9b9259c4d57eb3.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 18574.412 sec ago
+[TRACE]  optimizing build, last build was 36727.553 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  No native module libraries to add
@@ -123,8 +123,8 @@ Command
 [TRACE]  No change, skipping /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default@2x.png
 [DEBUG]  Copying CSS files
 [INFO]   Processing JavaScript files
-[DEBUG]  Copying /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/Resources/action.js => /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/build/iphone/build/Products/Debug-iphonesimulator/Smith_Jarrod_Project1.app/action.js
-[DEBUG]  Overwriting /var/folders/zk/r7vy3c8503792qfczh43dhfw0000gn/T/liveview.js => /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/build/iphone/build/Products/Debug-iphonesimulator/Smith_Jarrod_Project1.app/app.js
+[DEBUG]  Overwriting /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/Resources/action.js => /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/build/iphone/build/Products/Debug-iphonesimulator/Smith_Jarrod_Project1.app/action.js
+[DEBUG]  Overwriting /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/Resources/app.js => /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/build/iphone/build/Products/Debug-iphonesimulator/Smith_Jarrod_Project1.app/app.js
 [INFO]   Writing app properties
 [TRACE]  No change, skipping /Users/JarrodSmith/GitHub/Smith_Jarrod_Visualframeworks/Smith_Jarrod_Project1/build/iphone/build/Products/Debug-iphonesimulator/Smith_Jarrod_Project1.app/_app_props_.json
 [DEBUG]  Using default application routing
@@ -140,13 +140,13 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 209ms
+[INFO]   Finished building the application in 1s 212ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPhone 6s
 [TRACE]  [ioslib]   UDID    = 29D9F465-1827-4B4D-A17C-307B0C921646
 [TRACE]  [ioslib]   iOS     = 9.1
 [TRACE]  [ioslib] Autoselected Xcode: 7.1.1
-[TRACE]  [ioslib] Removing old log file: /Users/JarrodSmith/Library/Developer/CoreSimulator/Devices/29D9F465-1827-4B4D-A17C-307B0C921646/data/Containers/Data/Application/41576D62-4887-4D4D-86F6-3177DB2E4A75/Documents/937d6c09-3a96-40b6-9eee-db91a1e23b1d.log
+[TRACE]  [ioslib] Removing old log file: /Users/JarrodSmith/Library/Developer/CoreSimulator/Devices/29D9F465-1827-4B4D-A17C-307B0C921646/data/Containers/Data/Application/0BE17565-86F7-40F2-BB97-A6F98610D30D/Documents/937d6c09-3a96-40b6-9eee-db91a1e23b1d.log
 [TRACE]  [ioslib] iPhone 6s Simulator already running with the correct udid
 [TRACE]  [ioslib] Tailing iPhone 6s Simulator system log: /Users/JarrodSmith/Library/Logs/CoreSimulator/29D9F465-1827-4B4D-A17C-307B0C921646/system.log
 [TRACE]  [ioslib] Running: osascript "/Users/JarrodSmith/Library/Application Support/Titanium/mobilesdk/osx/5.1.1.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
@@ -156,5 +156,5 @@ Command
 [TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl launch 29D9F465-1827-4B4D-A17C-307B0C921646 com.Project1
 [TRACE]  [ioslib] App launched
 [TRACE]  [Smith_Jarrod_Project1] assertion failed: 14F1021 13B137: libxpc.dylib + 58126 [0F47719F-3076-3664-A64B-CEB6901B254D]: 0x7d
-[TRACE]  [ioslib] Found application log file: /Users/JarrodSmith/Library/Developer/CoreSimulator/Devices/29D9F465-1827-4B4D-A17C-307B0C921646/data/Containers/Data/Application/ED63BD25-E13D-475B-8C6B-EB40ED7889FD/Documents/937d6c09-3a96-40b6-9eee-db91a1e23b1d.log
-[TRACE]  [ioslib] Detected crash, but no crash file
+[TRACE]  [ioslib] Found application log file: /Users/JarrodSmith/Library/Developer/CoreSimulator/Devices/29D9F465-1827-4B4D-A17C-307B0C921646/data/Containers/Data/Application/0E0A7718-6B61-46B2-A843-30A4BB7A3986/Documents/937d6c09-3a96-40b6-9eee-db91a1e23b1d.log
+[TRACE]  [ioslib] Detected crash file: /Users/JarrodSmith/Library/Logs/DiagnosticReports/Smith_Jarrod_Project1_2015-11-29-212752_Jarrods-MacBook-Pro.crash

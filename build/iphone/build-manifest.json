@@ -3131,6 +3131,5 @@
 	"encryptJS": false,
 	"useJSCore": false,
 	"runOnMainThread": false,
-	"useAutoLayout": false,
-	"liveview": true
+	"useAutoLayout": false
 }

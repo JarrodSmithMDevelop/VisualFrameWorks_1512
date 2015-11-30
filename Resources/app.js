@@ -31,10 +31,17 @@ var startButton = Ti.UI.createLabel({
 	color: "white",
 });
 
+//Calling second js file
+var loadFile = require("action");
+
+
 //To open window
 mainWindow.open();
 startView.add(startButton);
 mainWindow.add(startView);
+
+
+
 
 
 

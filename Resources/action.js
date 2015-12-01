@@ -60,6 +60,7 @@ var guitarist = Ti.UI.createLabel({
 	text: musician[i]
 });
 
+
 //Create guitarist view
 var guitaristView = Ti.UI.createView({
 	backgroundColor: "#999",
@@ -78,20 +79,36 @@ var listView = function(){
 	mainWindow.add(previousView,nextView,guitaristView, titleBar);
 };
 
-
-//Event listener to move to next name
-var moveNext = function(){
-	i = i+1;
-	guitarist = musician[i];
-	guitaristView.add(guitarist);
-};
-
-//Event listener to move to previous name 
-
-startView.addEventListener("click", listView);
-nextView.addEventListener("click", moveNext);
 previousView.add(previous);
 nextView.add(next);
 titleBar.add(titleBarText);
 guitaristView.add(guitarist);
+
+//Event listener to move to next name
+var moveNext = function(){
+	guitarist = null;	
+		i= i+1;
+	var guitarist = Ti.UI.createLabel({
+	text: musician[i]
+});
+	
+	guitaristView.add(guitarist);
+	mainWindow.add(guitaristView);
+};
+
+//Event listener to move to previous name 
+var movePrevious = function(){	
+		i= i-1;
+	var guitarist = Ti.UI.createLabel({
+	text: musician[i]
+});
+	guitaristView.add(guitarist);
+	mainWindow.add(guitaristView);
+};
+
+
+startView.addEventListener("click", listView);
+nextView.addEventListener("click", moveNext);
+previousView.addEventListener("click", movePrevious);
+
 

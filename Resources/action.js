@@ -79,34 +79,50 @@ var listView = function(){
 	mainWindow.add(previousView,nextView,guitaristView, titleBar);
 };
 
-previousView.add(previous);
-nextView.add(next);
-titleBar.add(titleBarText);
-guitaristView.add(guitarist);
+
 
 //Event listener to move to next name
 var moveNext = function(){
-	guitarist = null;	
+	guitaristView = null;
 		i= i+1;
 	var guitarist = Ti.UI.createLabel({
 	text: musician[i]
 });
-	
+	var guitaristView = Ti.UI.createView({
+	backgroundColor: "#999",
+	borderRadius: 10,
+	borderWidth: 3,
+	width: 300,
+	height: 50
+});	
 	guitaristView.add(guitarist);
 	mainWindow.add(guitaristView);
+
+	
 };
 
 //Event listener to move to previous name 
 var movePrevious = function(){	
+		guitaristView = null;
 		i= i-1;
 	var guitarist = Ti.UI.createLabel({
 	text: musician[i]
 });
+	var guitaristView = Ti.UI.createView({
+	backgroundColor: "#999",
+	borderRadius: 10,
+	borderWidth: 3,
+	width: 300,
+	height: 50
+});	
 	guitaristView.add(guitarist);
 	mainWindow.add(guitaristView);
 };
 
-
+previousView.add(previous);
+nextView.add(next);
+titleBar.add(titleBarText);
+guitaristView.add(guitarist);
 startView.addEventListener("click", listView);
 nextView.addEventListener("click", moveNext);
 previousView.addEventListener("click", movePrevious);

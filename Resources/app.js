@@ -13,7 +13,6 @@ var mainWindow = Ti.UI.createWindow({
 	background: "#000"
 });
 
-//Create a view 
 
 //Create start button
 var startView = Ti.UI.createView({
@@ -24,8 +23,7 @@ var startView = Ti.UI.createView({
 	height: 50
 });
 
-//Create labels for views
-//Start button
+//Create labels for start button
 var startButton = Ti.UI.createLabel({
 	text: "Click To Start",
 	color: "white",
@@ -35,7 +33,7 @@ var startButton = Ti.UI.createLabel({
 var loadFile = require("action");
 
 
-//To open window
+//To open window and adding the start button and text you the main window
 mainWindow.open();
 startView.add(startButton);
 mainWindow.add(startView);

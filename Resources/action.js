@@ -1,4 +1,4 @@
-//Title
+//Title bar for after you click the start button.
 var titleBar = Ti.UI.createView({
 	backgroundColor: "#000",
 	borderRadius: 10,
@@ -8,13 +8,14 @@ var titleBar = Ti.UI.createView({
 	width: 300
 });
 
+//text for the title bar
 var titleBarText = Ti.UI.createLabel({
 	text: "Top 8 guitarist of all time",
 	color: "white"
 });
 
 //Create 2 views for previous and next buttons 
-//Create previous view
+//Create previous view for previous button
 var previousView = Ti.UI.createView({
 	backgroundColor: "#999",
 	borderRadius: 10,
@@ -25,13 +26,13 @@ var previousView = Ti.UI.createView({
 	left: 20
 });
 
-//Previous label
+//Previous label for previous button
 var previous = Ti.UI.createLabel({
 	text: "Previous",
 	color: "#000"
 });
 
-//Create next view 
+//Create next view for next button 
 var nextView = Ti.UI.createView({
 	backgroundColor: "#999",
 	borderRadius: 10,
@@ -42,7 +43,7 @@ var nextView = Ti.UI.createView({
 	right: 20
 });
 
-//Next label
+//Next label for next button
 var next = Ti.UI.createLabel({
 	text: "Next",
 	color: "#000"
@@ -119,10 +120,13 @@ var movePrevious = function(){
 	mainWindow.add(guitaristView);
 };
 
+//adding text to views 
 previousView.add(previous);
 nextView.add(next);
 titleBar.add(titleBarText);
 guitaristView.add(guitarist);
+
+//event listeners
 startView.addEventListener("click", listView);
 nextView.addEventListener("click", moveNext);
 previousView.addEventListener("click", movePrevious);
